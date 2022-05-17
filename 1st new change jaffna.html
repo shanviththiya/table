@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 10px;
+  overflow: hidden;
+  font-size: 10px;
+  background-color: rgb(28, 92, 10);
+ 
+}
+
+li {
+  float: left;
+}
+ 
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.active {
+  background-color: #04AA6D;
+}
+
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+    width: 5%;
+    
+   
+    
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+  padding: 80px;
+  height: 700px; /* Should be removed. Only for demonstration */
+}
+
+.column1 {
+  float: left;
+  width: 60%;
+  padding: 80px;
+  height: 700px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid rgb(30, 29, 29);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #2a7114;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+input[type=Reset] {
+  width: 20%;
+  background-color: #6e1009;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+
+div.container {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.search{
+        float:right;
+        margin:40px;
+
+    }
+
+
+
+    table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 10px;
+}
+
+input[type=Edit] {
+  width: 40%;
+  background-color: #2a7114;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+.topnav .login-container {
+  float: right;
+}
+
+
+
+.topnav .login-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background-color: white;
+  color: rgb(21, 19, 19);
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+ .login-container button:hover {
+  background-color: green;
+}
+
+
+
+
+</style>
+</head>
+
+
+
+
+<body>
+
+<ul>
+  <li><a href="#home"  padding-right:70px;>ABC<br>Shop</a></li>
+
+
+  <li><a href="#news">Home</a></li>
+  <li><a href="#contact">Sales</a></li>
+  <li><a href="#home"> Discount</a></li>
+  <li><a href="#home">Vendor</a></li>
+  <li><a href="#home">Purchase</a></li>
+  <li><a href="#home">Catagory</a></li>
+  <li><a href="#news"> Brand </a></li>
+  
+  
+
+
+
+  <div class="topnav">
+ 
+    <div class="login-container">
+      <form action="/action_page.php">
+        <button type="submit">Login</button>
+        <button type="submit">logout</button>
+      </form>
+    </div>
+  </div>
+  
+  
+</ul>
+
+
+
+
+
+
+
+
+<div class="row">
+    <div class="column" style="background-color: white(230, 228, 228, 0.936);">
+      
+
+
+    <form>
+      <fieldset>
+      <label for="fname">Barcode</label>
+      <input type="text" id="fname" name="firstname" placeholder="Barcode..">
+      
+      <label for="fname">Product name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Product name..">
+  
+      <label for="lname">Price</label>
+      <input type="text" id="lname" name="lastname" placeholder="price..">
+      
+      
+      <label for="lname">Discount name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Discount name..">
+      
+      <label for="lname">Amound</label>
+      <input type="text" id="lname" name="lastname" placeholder="Amound..">
+      
+      <label for="lname">Discount name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Discount name..">
+      
+      <label for="lname">Calculate Amount</label>
+      <input type="text" id="lname" name="lastname" placeholder="Calculate Amount..">
+      
+      <br>
+      <br>
+      <!--<button type="rset" class="btn2">Reset</button> <button type="rset" class="btn1">Save</button>-->
+  
+
+     
+      
+      <div class="batton"> 
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+      </div>
+
+      </fieldset>
+    </form>
+   
+  
+  </div>
+    <div class="column1" style="background-color:whait;">
+
+
+
+        <form  class="search">
+            Search: <input type="search" placeholder="Search.." name="search">
+           
+          </form>
+        
+          
+
+      
+
+     
+
+       <table>
+       <tr>
+         <th>Barcode</th>
+        <th>Product name</th>
+        <th>Price</th>
+        <th>Discount name</th>
+        <th>Amound</th>
+        <th>Dis_Amount</th>
+        <th>Edit</th>
+       </tr>
+  
+      <tr>
+         <td>222</td>
+         <td>LUX</td>
+         <td>40</td>
+         <td>Fix</td>
+         <td>2%</td>
+         <td>4</td>
+        <td>     <input type="Edit" value="Edit">             </td>
+      </tr>
+</table>
+
+
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
